@@ -1,0 +1,16 @@
+DROP TABLE usuario;
+DROP TABLE perfil;
+DROP TABLE servico;
+DROP TABLE pessoa;
+DROP TABLE aluno;
+DROP TABLE professor;
+DROP TABLE disciplina;
+DROP TABLE modulo;
+DROP TABLE trilha;
+DROP TABLE tem_perfil;
+DROP TABLE tem_permissao;
+DROP TABLE ministra;
+DROP TABLE compoe_modulo;
+DROP TABLE compoe_trilha;
+DROP TABLE cursa;
+DROP TABLE plano;
