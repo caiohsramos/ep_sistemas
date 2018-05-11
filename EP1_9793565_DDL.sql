@@ -1,4 +1,5 @@
 CREATE DATABASE yggdrasil;
+\c yggdrasil;
 
 CREATE TABLE usuario (
   id_usuario SERIAL PRIMARY KEY,
@@ -34,14 +35,16 @@ CREATE TABLE aluno (
   id_aluno SERIAL PRIMARY KEY,
   aluno_nusp CHAR(9) NOT NULL UNIQUE,
   aluno_ano_de_ingresso INTEGER,  --NÃO BOTEI CONSTRAINT
-  aluno_forma_de_ingresso CHAR(1)
+  aluno_forma_de_ingresso CHAR(1),
+  aluno_ID_pessoa INT UNIQUE REFERENCES pessoa(id_pessoa)
 );
 
 CREATE TABLE professor (
   id_professor SERIAL PRIMARY KEY,
   professor_nusp CHAR(9) NOT NULL UNIQUE,
   professor_ano_de_ingresso INTEGER,  --NÃO BOTEI CONSTRAINT
-  professor_departamento CHAR(20)
+  professor_departamento CHAR(20),
+  professor_ID_pessoa INT UNIQUE REFERENCES pessoa(id_pessoa)
 );
 
 CREATE TABLE disciplina (
