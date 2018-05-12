@@ -64,10 +64,10 @@ INSERT INTO tem_perfil VALUES (DEFAULT, (SELECT id_usuario FROM usuario WHERE us
 INSERT INTO tem_perfil VALUES (DEFAULT, (SELECT id_usuario FROM usuario WHERE usuario_login='pablito'), (SELECT id_perfil FROM perfil WHERE perfil_codigo='alu'));
 INSERT INTO tem_perfil VALUES (DEFAULT, (SELECT id_usuario FROM usuario WHERE usuario_login='manobrown1'), (SELECT id_perfil FROM perfil WHERE perfil_codigo='mas'));
 
-INSERT INTO tem_permissao VALUES (DEFAULT, (SELECT id_servico FROM servico WHERE servico_nome='visualizar grade'), (SELECT id_perfil FROM perfil WHERE perfil_codigo='gue'));
-INSERT INTO tem_permissao VALUES (DEFAULT, (SELECT id_servico FROM servico WHERE servico_nome='alterar grade'), (SELECT id_perfil FROM perfil WHERE perfil_codigo='mas'));
-INSERT INTO tem_permissao VALUES (DEFAULT, (SELECT id_servico FROM servico WHERE servico_nome='alterar plano'), (SELECT id_perfil FROM perfil WHERE perfil_codigo='alu'));
-INSERT INTO tem_permissao VALUES (DEFAULT, (SELECT id_servico FROM servico WHERE servico_nome='visualizar plano'), (SELECT id_perfil FROM perfil WHERE perfil_codigo='pro'));
+INSERT INTO tem_permissao VALUES (DEFAULT, (SELECT id_servico FROM servico WHERE servico_nome='visu grade'), (SELECT id_perfil FROM perfil WHERE perfil_codigo='gue'));
+INSERT INTO tem_permissao VALUES (DEFAULT, (SELECT id_servico FROM servico WHERE servico_nome='alte grade'), (SELECT id_perfil FROM perfil WHERE perfil_codigo='mas'));
+INSERT INTO tem_permissao VALUES (DEFAULT, (SELECT id_servico FROM servico WHERE servico_nome='alte plano'), (SELECT id_perfil FROM perfil WHERE perfil_codigo='alu'));
+INSERT INTO tem_permissao VALUES (DEFAULT, (SELECT id_servico FROM servico WHERE servico_nome='visu plano'), (SELECT id_perfil FROM perfil WHERE perfil_codigo='pro'));
 INSERT INTO tem_permissao VALUES (DEFAULT, (SELECT id_servico FROM servico WHERE servico_nome='matricular'), (SELECT id_perfil FROM perfil WHERE perfil_codigo='alu'));
 
 INSERT INTO ministra VALUES (DEFAULT, (SELECT id_professor FROM professor WHERE professor_nusp='0000001'), (SELECT id_disciplina FROM disciplina WHERE disciplina_codigo='MAC0000'));
