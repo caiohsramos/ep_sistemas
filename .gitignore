@@ -1,3 +1,7 @@
 *.pdf
 
 *.swp
+
+consultas.sql
+
+logfile
