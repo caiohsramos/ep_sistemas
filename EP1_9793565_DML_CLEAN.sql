@@ -1,16 +1,1 @@
-TRUNCATE usuario;
-TRUNCATE perfil;
-TRUNCATE servico;
-TRUNCATE pessoa;
-TRUNCATE aluno;
-TRUNCATE professor;
-TRUNCATE disciplina;
-TRUNCATE modulo;
-TRUNCATE trilha;
-TRUNCATE tem_perfil;
-TRUNCATE tem_permissao;
-TRUNCATE ministra;
-TRUNCATE compoe_modulo;
-TRUNCATE compoe_trilha;
-TRUNCATE cursa;
-TRUNCATE plano;
+TRUNCATE plano, cursa, compoe_trilha, compoe_modulo, ministra, tem_permissao, tem_perfil, perfil, usuario, servico, aluno, professor, pessoa, modulo, trilha, disciplina;

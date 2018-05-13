@@ -1,3 +1,5 @@
+SET datestyle TO DMY;
+
 INSERT INTO usuario VALUES (DEFAULT, 'igorfratel', 'senha!!!', '2018-05-11 14:53:00');
 INSERT INTO usuario VALUES (DEFAULT, 'feulo', 'senha!!!', '2018-05-11 14:53:00');
 INSERT INTO usuario VALUES (DEFAULT, 'caiotop', 'senha!!!', '2018-05-11 14:53:00');
