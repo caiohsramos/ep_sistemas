@@ -1,0 +1,13 @@
+Igor Fratel Santana 9793565
+Guilherme Feulo do Espirito Santo 6431749
+Caio Henrique Silva Ramos 9292991
+
+Os comandos foram executados usando:
+"psql -f <nome_do_arquivo>" para os arquivos DDL.sql e DDL_CLEAN.sql
+"psql yggdrasil -f <nome_do_arquivo>"  para os demais arquivos
+
+Alternativamente, podemos usar:
+"psql"
+"\i <nome_do_arquivo>" para executar os scripts diretamente do psql
+Se optar por esse método, deve se desconectar do banco de dados yggdrasil antes de executar
+o script DDL_CLEAN.sql, pois não é permitido excluir um banco no qual se está conectado
